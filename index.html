@@ -122,6 +122,51 @@
         <p>Yeni özellikler ve deneyimler VORTEX'e eklenmeye devam edecek.</p>
       </article>
     </section>
+    <section id="icerik-alani" class="content-area" hidden>
+  <button id="geri" type="button">← Ana sayfaya dön</button>
+  <h2 id="icerik-baslik"></h2>
+  <p id="icerik-yazi"></p>
+</section>
+
+<script>
+const icerikler = {
+  "Keşfet": {
+    baslik: "VORTEX Keşfet",
+    yazi: "Yeni fikirleri, dijital dünyayı ve farklı deneyimleri keşfet."
+  },
+  "Üret": {
+    baslik: "VORTEX Üret",
+    yazi: "Fikirlerini geliştir, yaratıcılığını ortaya çıkar."
+  },
+  "Yakında": {
+    baslik: "Yakında VORTEX'te",
+    yazi: "Yeni özellikler çok yakında burada olacak."
+  }
+};
+
+const alan = document.getElementById("icerik-alani");
+const baslik = document.getElementById("icerik-baslik");
+const yazi = document.getElementById("icerik-yazi");
+
+document.querySelectorAll(".card").forEach(kart => {
+  kart.style.cursor = "pointer";
+  kart.addEventListener("click", () => {
+    const ad = kart.querySelector("h2").textContent.trim();
+    const icerik = icerikler[ad];
+    if (!icerik) return;
+
+    baslik.textContent = icerik.baslik;
+    yazi.textContent = icerik.yazi;
+    alan.hidden = false;
+    alan.scrollIntoView({ behavior: "smooth" });
+  });
+});
+
+document.getElementById("geri").addEventListener("click", () => {
+  alan.hidden = true;
+});
+</script>
+  </main>
   </main>
 
   <footer>© 2026 VORTEX · Yeni fikirlerin buluşma noktası.</footer>
