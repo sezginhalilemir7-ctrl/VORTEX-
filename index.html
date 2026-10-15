@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VORTEX — Sıkılmaya Son</title>
+  <meta name="description" content="VORTEX ile keşfet, üret ve eğlen.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      background: #080910;
+      color: #f4f3ff;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 24px 8%;
+      border-bottom: 1px solid #24243b;
+    }
+    .logo {
+      font-size: 27px;
+      font-weight: 900;
+      letter-spacing: 5px;
+      color: #a78bfa;
+    }
+    header span { color: #a3a3b8; font-size: 13px; }
+    main {
+      max-width: 1100px;
+      margin: auto;
+      padding: 85px 24px;
+    }
+    .tag {
+      color: #a78bfa;
+      letter-spacing: 3px;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+    h1 {
+      font-size: clamp(42px, 8vw, 82px);
+      line-height: 1.05;
+      max-width: 750px;
+      margin-bottom: 24px;
+    }
+    h1 strong {
+      background: linear-gradient(90deg, #a78bfa, #54d6ff);
+      color: transparent;
+      background-clip: text;
+    }
+    .intro {
+      color: #a7a7bd;
+      font-size: 17px;
+      line-height: 1.8;
+      max-width: 570px;
+      margin-bottom: 38px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 18px;
+      margin-top: 65px;
+    }
+    .card {
+      padding: 28px;
+      min-height: 180px;
+      background: linear-gradient(145deg, #151525, #0e101b);
+      border: 1px solid #292742;
+      border-radius: 16px;
+      transition: .2s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #8b5cf6;
+    }
+    .symbol { font-size: 27px; margin-bottom: 22px; }
+    h2 { font-size: 19px; margin-bottom: 12px; }
+    .card p { color: #a7a7bd; line-height: 1.6; font-size: 14px; }
+    footer {
+      text-align: center;
+      color: #77778f;
+      padding: 30px 15px;
+      border-top: 1px solid #24243b;
+      font-size: 12px;
+    }
+    @media (max-width: 600px) {
+      header { padding: 20px; }
+      main { padding-top: 60px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">VORTEX.</div>
+    <span>DİJİTAL KEŞİF ALANI</span>
+  </header>
+
+  <main>
+    <p class="tag">YENİ BİR DENEYİM</p>
+    <h1>Sıkılmaya ara ver.<br><strong>Keşfetmeye başla.</strong></h1>
+    <p class="intro">
+      Burası sıradan bir internet sitesi değil.
+      Yeni fikirler, dijital keşifler ve farklı deneyimler
+      için kendi alanın. VORTEX'e hoş geldin.
+    </p>
+
+    <section class="grid">
+      <article class="card">
+        <div class="symbol">✳</div>
+        <h2>Keşfet</h2>
+        <p>Karşına çıkan yeni fikirlerle dijital dünyada farklı şeyler keşfet.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">⌘</div>
+        <h2>Üret</h2>
+        <p>Kendi fikirlerini geliştir ve yaratıcılığını ortaya çıkar.</p>
+      </article>
+      <article class="card">
+        <div class="symbol">◈</div>
+        <h2>Yakında</h2>
+        <p>Yeni özellikler ve deneyimler VORTEX'e eklenmeye devam edecek.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer>© 2026 VORTEX · Yeni fikirlerin buluşma noktası.</footer>
+</body>
+</html>
